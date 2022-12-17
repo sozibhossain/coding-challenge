@@ -1,0 +1,17 @@
+.save-data{
+    margin-top: -35px;
+}
+.savedata-area{
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 15px;
+    width: 500px;
+    border-radius: 25px;
+}
+.savedata-name-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.savedata-sectors{
+    margin-top: -30px;
+}
