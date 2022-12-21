@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import Sectors from './Pages/Sectors/Sectors';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SaveData from './Pages/SaveData/SaveData';
+import AddSectors from './Pages/AddSectors/AddSectors';
+import Sectors from './Pages/Sectors/Sectors';
 
 function App() {
   return (

@@ -6,14 +6,14 @@ const SaveData = () => {
     const [saveSectors, setSaveSectors] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/createpost')
+        fetch('http://localhost:5000/addDocuments')
             .then(res => res.json())
             .then(data => setSaveSectors(data));
     }, []);
 
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/createpost/${id}`;
+        const url = `http://localhost:5000/addDocuments/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -45,8 +45,8 @@ const SaveData = () => {
                         <div className='savedata-sectors'>
                         <h4>Your sectors :</h4>
                         {
-                            saveSectors.selector.map((sectors, index) => (
-                                <ul><li>{sectors}</li></ul>
+                            saveSectors.selectedItem.map((sectors, index) => (
+                                <ul><li>{sectors.label}</li></ul>
                             ))
                         }  
                         </div>
@@ -58,3 +58,4 @@ const SaveData = () => {
 };
 
 export default SaveData;
+

@@ -3,16 +3,31 @@
     margin-top: 50px;
 }
 
-.check-box{
-    display: flex;
+.name-fild{
+    border: none;
+    width: 545px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-
 .Sectors-form-area{
     background-color: rgba(127, 255, 212, 0.24);
     padding: 30px;
-    height: 300px;
-    width: 500px;
+    height: 370px;
+    width: 550px;
     border-radius: 25px;
+}
+.check-Box{
+    margin-top: 20px;
+}
+
+.submit-btn{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    width: 545px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 main{
